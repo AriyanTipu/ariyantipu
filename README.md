@@ -8,7 +8,7 @@ Currently preparing for an MSc in Data Science at **King's College London (Sept 
 
 ### 🚀 Featured Engineering Projects
 
-#### [Market Driver API]([link-to-repo](https://github.com/AriyanTipu/Market-Driver-API))
+#### [Market Driver API]([[link-to-repo](https://github.com/AriyanTipu/Market-Driver-API)])
 *A containerised ML inference service designed for low-latency production environments.*
 * **Impact:** Reduced feature space by 25% via RFE, significantly improving inference latency.
 * **Tech Stack:** Python, FastAPI, Docker, AWS EC2, Pydantic.
