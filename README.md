@@ -15,7 +15,7 @@ Currently preparing for an MSc in Data Science at **King's College London (Sept 
 * **Key Takeaway:** Solved environment parity issues by containerising the full pipeline for seamless AWS deployment.
 
 #### [Stochastic Loss Simulator](link-to-repo)
-*Large-scale risk modelling simulation optimized for performance.*
+*Large-scale risk modelling simulation optimised for performance.*
 * **Impact:** Improved predictive accuracy by 18% over baseline using a custom Mixed Poisson model.
 * **Tech Stack:** R, Apache Spark, Monte Carlo Simulation.
 * **Key Takeaway:** Leveraged parallel computing via Spark to handle high-volume stochastic datasets.
