@@ -3,7 +3,7 @@
 **MSc Data Science Student @ King's College London**  
 Mathematics graduate interested in Machine Learning Engineering, Backend Development and Data Infrastructure.
 
-I enjoy building end-to-end ML systems—from data processing and model training to deployment with APIs and cloud infrastructure. My current focus is learning how to build software that is reliable, maintainable and deployable rather than simply training machine learning models.
+I enjoy building end-to-end ML systems, from data processing and model training to deployment with APIs and cloud infrastructure. My current focus is learning how to build software that is reliable, maintainable and deployable rather than simply training machine learning models.
 
 ---
 
