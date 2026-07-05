@@ -1,134 +1,50 @@
 # Hi, I'm Ariyan Tipu 👋
 
-**MSc Data Science Student @ King's College London**  
-Mathematics graduate interested in Machine Learning Engineering, Backend Development and Data Infrastructure.
+I am a Mathematics graduate transitioning into **Machine Learning Engineering**. My focus is on building reliable, maintainable, and scalable ML systems—moving beyond model training to data infrastructure, API deployment, and robust software engineering practices.
 
-I enjoy building end-to-end ML systems, from data processing and model training to deployment with APIs and cloud infrastructure. My current focus is learning how to build software that is reliable, maintainable and deployable rather than simply training machine learning models.
-
----
-
-## 🔧 Technical Skills
-
-### Languages
-- Python
-- SQL
-- R
-- MATLAB
-
-### Machine Learning
-- Scikit-learn
-- Pandas
-- Feature Engineering
-- Model Evaluation
-- Hyperparameter Optimisation
-
-### Backend & Engineering
-- FastAPI
-- Docker
-- Git
-- PyTest
-- REST APIs
-
-### Cloud
-- AWS EC2
-- AWS S3
+Currently preparing for an MSc in Data Science at **King's College London (Sept 2026)**.
 
 ---
 
-# Featured Projects
+### 🚀 Featured Engineering Projects
 
-## 📈 Market Driver API
+#### [Market Driver API](link-to-repo)
+*A containerised ML inference service designed for low-latency production environments.*
+* **Impact:** Reduced feature space by 25% via RFE, significantly improving inference latency.
+* **Tech Stack:** Python, FastAPI, Docker, AWS EC2, Pydantic.
+* **Key Takeaway:** Solved environment parity issues by containerising the full pipeline for seamless AWS deployment.
 
-Dockerised machine learning inference service deployed on AWS.
+#### [Stochastic Loss Simulator](link-to-repo)
+*Large-scale risk modelling simulation optimized for performance.*
+* **Impact:** Improved predictive accuracy by 18% over baseline using a custom Mixed Poisson model.
+* **Tech Stack:** R, Apache Spark, Monte Carlo Simulation.
+* **Key Takeaway:** Leveraged parallel computing via Spark to handle high-volume stochastic datasets.
 
-### Built with
-
-- Python
-- FastAPI
-- Docker
-- AWS EC2
-- Scikit-learn
-- Pydantic
-
-### Highlights
-
-- Containerised the complete inference pipeline using Docker for reproducible deployments.
-- Developed REST API endpoints with FastAPI and Pydantic to serve structured model predictions.
-- Applied Correlation Filtering and Recursive Feature Elimination (RFE) to reduce the feature space by **25%**, improving inference latency.
-- Deployed the application on AWS EC2 with cloud-based storage using S3.
-
-**Repository:** *(link)*
+#### [Portfolio Optimisation Engine](link-to-repo)
+*A modular framework for quantitative experimentation.*
+* **Impact:** Boosted back-tested allocation efficiency by 12% via hyperparameter tuning.
+* **Tech Stack:** MATLAB, PyTest, Random Forest.
+* **Key Takeaway:** Implemented CI/CD workflows and automated unit testing (PyTest) to ensure system reliability.
 
 ---
 
-## 📊 Stochastic Loss Simulator
-
-Large-scale Monte Carlo simulation for stochastic risk modelling.
-
-### Built with
-
-- R
-- Apache Spark
-- Monte Carlo Simulation
-
-### Highlights
-
-- Parallelised Monte Carlo simulations using Apache Spark to improve computational efficiency.
-- Implemented a Mixed Poisson loss model achieving **18% higher predictive accuracy** than baseline distributions.
-- Validated convergence across **250 random seeds** to assess simulation stability.
-
-**Repository:** *(link)*
+### 💼 Professional Experience
+*   **Technology Intern @ Bright Network:** Refactored ML pipelines, identifying architectural bottlenecks and delivering a 10% efficiency gain.
+*   **Lead Tutor:** Redesigned curriculum for A-Level Further Mathematics; improved student outcomes by 20% through targeted mentorship.
 
 ---
 
-## 💼 Portfolio Optimisation Engine
-
-Machine learning framework for portfolio optimisation and experimentation.
-
-### Built with
-
-- MATLAB
-- Random Forest
-- PyTest
-- Git
-
-### Highlights
-
-- Developed a modular Random Forest optimisation framework.
-- Improved back-tested allocation efficiency by **12%** through hyperparameter optimisation.
-- Added automated testing with PyTest to improve reliability during development.
-- Managed development using Git feature branching and CI workflows.
-
-**Repository:** *(link)*
+### 🛠 Tech Stack
+* **Languages:** Python (Primary), SQL, R, MATLAB.
+* **ML/Data:** Scikit-learn, Pandas.
+* **Engineering:** Docker, FastAPI, Git, PyTest.
+* **Cloud:** AWS (EC2, S3).
 
 ---
 
-# Currently Learning
+### 📬 Let's Connect
+* **Email:** ariyantipu39@gmail.com
+* **LinkedIn:** [linkedin.com/in/ariyantipu](https://linkedin.com/in/ariyantipu)
+* **Location:** London, UK
 
-- Distributed Machine Learning
-- AWS Cloud Architecture
-- MLOps
-- CI/CD for Machine Learning
-- System Design
-
----
-
-## Education
-
-**King's College London**
-
-MSc Data Science (Starting September 2026)
-
-**City, University of London**
-
-BSc Mathematics with Data Science (2023–2026)
-
----
-
-## Connect
-
-📧 ariyantipu39@gmail.com
-
-💼 LinkedIn: https://linkedin.com/in/ariyantipu
-
-📍 London, United Kingdom
+*Always looking for opportunities to contribute to ML Infrastructure or Backend Engineering teams.*
