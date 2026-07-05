@@ -1,6 +1,6 @@
 # Hi, I'm Ariyan Tipu 👋
 
-I am a Mathematics graduate transitioning into **Machine Learning Engineering**. My focus is on building reliable, maintainable, and scalable ML systems—moving beyond model training to data infrastructure, API deployment, and robust software engineering practices.
+I am a Mathematics graduate transitioning into **Machine Learning Engineering**. My focus is on building reliable, maintainable, and scalable ML systems; moving beyond model training to data infrastructure, API deployment, and robust software engineering practices.
 
 Currently preparing for an MSc in Data Science at **King's College London (Sept 2026)**.
 
