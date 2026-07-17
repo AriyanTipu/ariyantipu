@@ -2,7 +2,7 @@
 
 # Hi, I'm Ariyan Tipu 👋
 
-**Machine Learning Engineer | MSc Data Science @ King's College London (2026) | Building ML Systems**
+**Machine Learning Engineer | MSc Data Science @ King's College London | Building ML systems**
 
 [![Email](https://img.shields.io/badge/Email-ariyantipu39%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:ariyantipu39@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ariyantipu-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ariyantipu/)
@@ -12,24 +12,11 @@
 
 ---
 
-### 👋 About me
+### 👨‍💻 About me
 
 I'm a Mathematics graduate moving into **Machine Learning Engineering**. My focus is on building reliable, maintainable and scalable ML systems: not just training models, but the data infrastructure, API deployment and software engineering practices that let them run in production.
 
 I'm currently preparing for an MSc in Data Science at **King's College London** (starting September 2026).
-
----
-
-### 📊 GitHub Stats
-
-<div align="center">
-
-[![Ariyan's GitHub stats](https://github-readme-stats.vercel.app/api?username=AriyanTipu&show_icons=true&theme=default&hide_border=true)](https://github.com/AriyanTipu)
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AriyanTipu&layout=compact&theme=default&hide_border=true)](https://github.com/AriyanTipu)
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AriyanTipu&theme=default&hide_border=true)](https://github.com/AriyanTipu)
-
-</div>
 
 ---
 
@@ -73,7 +60,7 @@ Three public, actively maintained repositories. Each one ships with CI, tests an
 - Fine-tuned Qwen2.5-3B-Instruct with QLoRA, then aligned it with Direct Preference Optimisation (DPO), where the preference pairs come from objective engine evidence rather than human labels: a deterministic parser checks every factual claim in a candidate explanation against Stockfish's actual evaluation and principal variation.
 - Wrote a custom JAX (`jit`/`vmap`) batch scorer to run that verification at scale across sampled candidates.
 - Served the model behind FastAPI with an explain-verify-regenerate loop: every response ships with its own verification report, and a failed check triggers one automatic regeneration before the best attempt is returned.
-- Backed the whole pipeline with 82 tests, and CI runs the entire flow end to end in miniature (real Stockfish engine, a tiny model, every stage) on every single push.
+- Backed the whole pipeline with 82 tests, and CI runs the entire flow end to end in miniature (real Stockfish engine, a tiny model, every stage) on every push.
 
 #### [olist-customer-retention](https://github.com/AriyanTipu/olist-customer-retention)
 
@@ -96,8 +83,8 @@ Three public, actively maintained repositories. Each one ships with CI, tests an
 
 ### 💼 Professional Experience
 
-- **Technology Intern @ Bright Network:** Refactored ML pipelines, identifying architectural bottlenecks and delivering a 10% efficiency gain.
-- **Lead Tutor:** Redesigned the curriculum for A-Level Further Mathematics, improving student outcomes by 20% through targeted mentorship.
+- **Technology Intern @ Bright Network:** Refactored ML pipelines, found architectural bottlenecks and delivered a 10% efficiency gain.
+- **Lead Tutor:** Redesigned the curriculum for A-Level Further Mathematics and mentored students, improving outcomes by 20%.
 
 ---
 
