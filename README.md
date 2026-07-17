@@ -14,7 +14,7 @@
 
 ### 👨‍💻 About me
 
-I'm a Mathematics graduate moving into **Machine Learning Engineering**. My focus is on building reliable, maintainable and scalable ML systems: not just training models, but the data infrastructure, API deployment and software engineering practices that let them run in production.
+I'm a Mathematics graduate moving into **Machine Learning Engineering**. My focus is on building reliable, maintainable and scalable ML systems: not just training models, but the data infrastructure, API deployment and software engineering practices that let them run in production. That includes hands-on work with neural networks: I train and align transformer language models (QLoRA fine-tuning, DPO) in PyTorch, and use JAX for the numerical side.
 
 I'm currently preparing for an MSc in Data Science at **King's College London** (starting September 2026).
 
@@ -41,13 +41,13 @@ Three public, actively maintained repositories. Each one ships with CI, tests an
 
 - Made overselling impossible by construction: every stock change goes through row-level locks (`SELECT ... FOR UPDATE`) taken in a fixed, deadlock-free order, proven with a test that fires eight genuinely concurrent buy requests against five units of stock.
 - Built a FastAPI WebSocket gateway that streams order and stock updates to a Vue 3 dashboard via PostgreSQL `LISTEN`/`NOTIFY`, so an event can never be broadcast for a transaction that later rolled back.
-- Wrote a warehouse pick-path optimiser twice on purpose: a pure Python reference implementation and a C++17 engine (via pybind11), with 150 randomised tests proving they always agree; the C++ version is up to 117.6x faster on larger orders.
+- Wrote a warehouse pick-path optimiser twice on purpose: a pure Python reference implementation and a C++17 engine (via pybind11), with a 150-case randomised parity suite proving they always agree; the C++ version is up to 117.6x faster on larger orders.
 - Took a "top sellers per warehouse" query from 104.98 ms to 4.08 ms (25.7x faster) with a partial covering index, documented end to end with real query plans.
-- Full CI/CD pipeline across four languages: linting, testing and building Django, FastAPI, C++ and Vue/TypeScript on every push, with production images published to GitHub Container Registry.
+- Full CI/CD pipeline: linting, testing and building the Django and FastAPI services, the C++ engine and the Vue/TypeScript dashboard on every push, with production images published to GitHub Container Registry.
 
 #### [opening-theory-engine](https://github.com/AriyanTipu/opening-theory-engine)
 
-*A small fine-tuned language model that explains chess opening moves, where every stage of training and serving is checked against Stockfish ground truth rather than anyone's opinion.*
+*A training and serving pipeline that teaches a small language model to explain chess opening moves, with every stage checked against Stockfish ground truth rather than anyone's opinion.*
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
@@ -57,10 +57,11 @@ Three public, actively maintained repositories. Each one ships with CI, tests an
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![Stockfish](https://img.shields.io/badge/Stockfish-white?color=555555)
 
-- Fine-tuned Qwen2.5-3B-Instruct with QLoRA, then aligned it with Direct Preference Optimisation (DPO), where the preference pairs come from objective engine evidence rather than human labels: a deterministic parser checks every factual claim in a candidate explanation against Stockfish's actual evaluation and principal variation.
+- Built the complete neural-network training pipeline: QLoRA supervised fine-tuning of the Qwen2.5-3B-Instruct transformer in 4-bit precision with LoRA adapters, followed by Direct Preference Optimisation (DPO), sized to run on a free Colab T4.
+- The DPO preference pairs come from objective engine evidence rather than human labels: a deterministic parser checks every factual claim in a candidate explanation against Stockfish's actual evaluation and principal variation.
 - Wrote a custom JAX (`jit`/`vmap`) batch scorer to run that verification at scale across sampled candidates.
 - Served the model behind FastAPI with an explain-verify-regenerate loop: every response ships with its own verification report, and a failed check triggers one automatic regeneration before the best attempt is returned.
-- Backed the whole pipeline with 82 tests, and CI runs the entire flow end to end in miniature (real Stockfish engine, a tiny model, every stage) on every push.
+- Backed the whole pipeline with 85 tests, and CI runs the entire flow end to end in miniature (real Stockfish engine, a tiny neural network, every stage) on every push.
 
 #### [olist-customer-retention](https://github.com/AriyanTipu/olist-customer-retention)
 
@@ -103,6 +104,7 @@ Three public, actively maintained repositories. Each one ships with CI, tests an
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Transformers-FFD21E?logo=huggingface&logoColor=black)
+![PEFT](https://img.shields.io/badge/PEFT_LoRA%2FQLoRA-FFD21E?logo=huggingface&logoColor=black)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
 ![Apache Spark](https://img.shields.io/badge/PySpark-E25A1C?logo=apachespark&logoColor=white)
 ![JAX](https://img.shields.io/badge/JAX-white?logo=jax&logoColor=black&color=lightgrey)
