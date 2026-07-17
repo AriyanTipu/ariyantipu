@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi, I'm Ariyan Tipu 👋
+# Ariyan Tipu
 
 **Machine Learning Engineer | MSc Data Science @ King's College London | Building ML systems**
 
