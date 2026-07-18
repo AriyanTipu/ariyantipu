@@ -14,7 +14,7 @@
 
 ### 👨‍💻 About me
 
-I'm a Mathematics graduate moving into **Machine Learning Engineering**. My focus is on building reliable, maintainable and scalable ML systems: not just training models, but the data infrastructure, API deployment and software engineering practices that let them run in production. That includes hands-on work with neural networks: I train and align transformer language models (QLoRA fine-tuning, DPO) in PyTorch, and use JAX for the numerical side.
+I'm a Mathematics graduate moving into **Machine Learning Engineering**. My focus is on building reliable, maintainable and scalable ML systems: not just training models, but the data infrastructure, API deployment and software engineering practices that let them run in production. That includes hands-on work with neural networks: I build QLoRA fine-tuning and DPO alignment pipelines for transformer language models in PyTorch, with JAX for the numerical side.
 
 I'm currently preparing for an MSc in Data Science at **King's College London** (starting September 2026).
 
@@ -26,7 +26,7 @@ Three public, actively maintained repositories. Each one ships with CI, tests an
 
 #### [realtime-orders-platform](https://github.com/AriyanTipu/realtime-orders-platform)
 
-*Real-time order and inventory operations platform for e-commerce, built around the two problems toy CRUD tutorials skip: safe concurrency and live updates without polling.*
+*An e-commerce order and inventory backend focused on the parts that are genuinely hard: keeping stock correct when many orders compete for it, and pushing live updates to dashboards without polling.*
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white)
@@ -41,8 +41,8 @@ Three public, actively maintained repositories. Each one ships with CI, tests an
 
 - Made overselling impossible by construction: every stock change goes through row-level locks (`SELECT ... FOR UPDATE`) taken in a fixed, deadlock-free order, proven with a test that fires eight genuinely concurrent buy requests against five units of stock.
 - Built a FastAPI WebSocket gateway that streams order and stock updates to a Vue 3 dashboard via PostgreSQL `LISTEN`/`NOTIFY`, so an event can never be broadcast for a transaction that later rolled back.
-- Wrote a warehouse pick-path optimiser twice on purpose: a pure Python reference implementation and a C++17 engine (via pybind11), with a 150-case randomised parity suite proving they always agree; the C++ version is up to 117.6x faster on larger orders.
-- Took a "top sellers per warehouse" query from 104.98 ms to 4.08 ms (25.7x faster) with a partial covering index, documented end to end with real query plans.
+- Wrote a warehouse pick-path optimiser twice on purpose: a pure Python reference implementation and a C++17 engine (via pybind11), with a 150-case randomised parity suite proving they always agree; the C++ version is roughly 100x faster on large orders.
+- Took a "top sellers per warehouse" query from about 105 ms to 4 ms (roughly 25x faster) with a partial covering index, documented end to end with real query plans.
 - Full CI/CD pipeline: linting, testing and building the Django and FastAPI services, the C++ engine and the Vue/TypeScript dashboard on every push, with production images published to GitHub Container Registry.
 
 #### [opening-theory-engine](https://github.com/AriyanTipu/opening-theory-engine)
@@ -65,7 +65,7 @@ Three public, actively maintained repositories. Each one ships with CI, tests an
 
 #### [olist-customer-retention](https://github.com/AriyanTipu/olist-customer-retention)
 
-*Churn modelling, survival analysis and A/B test design on 99,441 real e-commerce orders, with an emphasis on statistical honesty over flattering numbers.*
+*Churn modelling, survival analysis and A/B test design on 99,441 real e-commerce orders, reporting what the data supports rather than the most flattering cut of it.*
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![Apache Spark](https://img.shields.io/badge/PySpark-E25A1C?logo=apachespark&logoColor=white)
